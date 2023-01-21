@@ -38,7 +38,7 @@ class Search extends StatelessWidget {
                       ),
                     ),
                   ),
-                  FlatButton(
+                  TextButton(
                     onPressed: () => Navigator.pop(context),
                     child: Text(
                       "Cancel",

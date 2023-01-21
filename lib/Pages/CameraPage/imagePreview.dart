@@ -87,11 +87,15 @@ class CustomFlatButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FlatButton(
-      onPressed: function,
+    final ButtonStyle flatButtonStyle = TextButton.styleFrom(
       shape:
           RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
-      color: color ?? Colors.white.withOpacity(0.12),
+      backgroundColor: color ?? Colors.white.withOpacity(0.12),
+    );
+
+    return TextButton(
+      style: flatButtonStyle,
+      onPressed: function,
       child: child,
       // child: Icon(
       //   Icons.add_a_photo_outlined,

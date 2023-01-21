@@ -141,7 +141,7 @@ class FriendSectionHeading extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text("Freinds", style: normalHeading),
-        FlatButton.icon(
+        TextButton.icon(
           icon: Icon(Icons.add),
           label: Text('My Story', style: normalHeading),
           onPressed: () {},
